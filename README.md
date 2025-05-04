@@ -19,7 +19,7 @@ MCP(Model Context Protocol) 서버를 활용한 OpenAI Agent SDK 기반 챗봇 �
 
 ```bash
 # 저장소 클론
-git clone https://github.com/katpyeon/openai-agent-sdk-mcp.git
+git clone https://github.com/katpyeon/openai_agent_sdk_mcp.git
 cd openai-agent-sdk-mcp
 
 # Poetry로 의존성 설치
