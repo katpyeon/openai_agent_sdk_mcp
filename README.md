@@ -1,62 +1,69 @@
-# OpenAI Agent SDK MCP 챗봇
+# OpenAI Agent SDK MCP Chatbot
 
-MCP(Model Context Protocol) 서버를 활용한 OpenAI Agent SDK 기반 챗봇 애플리케이션 예제입니다.
+This is an example chatbot application using the OpenAI Agent SDK and an MCP (Model Context Protocol) server.
 
-## 프로젝트 소개
+## Project Overview
 
-이 예제 OpenAI Agent SDK와 fastMCP 라이브러리를 사용하여 MCP(Model Context Protocol) 서버를 연동한 챗봇 애플리케이션을 구현합니다. 현재 시간 정보를 제공하는 MCP 서버와 웹 검색 기능을 통합하여 사용자 질문에 응답합니다.
+This example demonstrates how to build a chatbot application that integrates an MCP (Model Context Protocol) server using the OpenAI Agent SDK and the fastMCP library. The chatbot provides current time information via the MCP server and integrates web search functionality to answer user queries.
 
-## 주요 기능
+## Main Features
 
-- Gradio 기반 대화형 UI
-- MCP 서버를 통한 현재 시간 정보 제공
-- OpenAI Agent SDK를 사용한 자연어 처리
-- 웹 검색 기능 통합
+- Interactive UI based on Gradio
+- Provides current time information via the MCP server
+- Natural language processing using the OpenAI Agent SDK
+- Integrated web search functionality
 
-## 설치 방법
+## Installation
 
-이 프로젝트는 Poetry를 사용하여 의존성을 관리합니다.
+This project uses Poetry for dependency management.
 
 ```bash
-# 저장소 클론
+# Clone the repository
 git clone https://github.com/katpyeon/openai_agent_sdk_mcp.git
 cd openai_agent_sdk_mcp
 
-# Poetry로 의존성 설치
+# Install dependencies with Poetry
 poetry install
 ```
 
-## 환경 변수 설정
+## Environment Variable Setup
 
-`.env` 파일을 프로젝트 루트에 생성하고 다음 변수를 설정합니다:
+Create a `.env` file in the project root and set the following variables:
 
 ```
 PYTHON_PATH=/path/to/your/python
 OPENAI_API_KEY=your_openai_api_key
 ```
 
-## 실행 방법
+## How to Run
 
 ```bash
-# Poetry 환경에서 앱 실행
+# Run the app in the Poetry environment
 poetry run python src/app.py
 ```
 
-## 프로젝트 구조
+## Project Structure
 
 ```
 openai-agent-sdk-mcp/
 ├── src/
-│   ├── app.py              # 메인 애플리케이션 (Gradio UI)
-│   ├── time_mcp_server.py  # 시간 정보 제공 MCP 서버
+│   ├── app.py              # Main application (Gradio UI)
+│   ├── time_mcp_server.py  # MCP server providing time information
 │   └── __init__.py
-├── tests/                  # 테스트 코드
-├── .env                    # 환경 변수 (git에 포함되지 않음)
-├── poetry.lock             # Poetry 의존성 잠금 파일
-├── pyproject.toml          # 프로젝트 메타데이터 및 의존성
-└── README.md               # 프로젝트 문서
+├── tests/                  # Test code
+├── .env                    # Environment variables (not included in git)
+├── poetry.lock             # Poetry dependency lock file
+├── pyproject.toml          # Project metadata and dependencies
+└── README.md               # Project documentation
 ```
 
-## 라이선스
+## License
 
 MIT
+
+
+---
+
+<a href="https://www.buymeacoffee.com/katpyeon" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="40" />
+</a>
